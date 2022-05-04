@@ -26,7 +26,7 @@ object Dependency {
     val JUNIT by lazy { "junit:junit:${Version.junitVersion}" }
     val TEST_JUNIT by lazy { "androidx.test.ext:junit:${Version.testJunitVersion}" }
     val ESPRESSO by lazy { "androidx.test.espresso:espresso-core:${Version.espressoVersion}" }
-    val TEST_COMPOSE by lazy {"androidx.compose.ui:ui-test-junit4:${Version.composeVersion}" }
+    val TEST_COMPOSE by lazy { "androidx.compose.ui:ui-test-junit4:${Version.composeVersion}" }
 
     // Rx
     val RX_ANDROID by lazy { "io.reactivex.rxjava3:rxandroid:${Version.rxAndroidVersion}" }
@@ -37,7 +37,7 @@ object Dependency {
     val HILT_COMPILER_DAGGER by lazy { "com.google.dagger:hilt-compiler:${Version.hiltVersion}" }
     val HILT_COMPILER_ANDROIDX by lazy { "androidx.hilt:hilt-compiler:${Version.hiltCompileVersion}" }
     val HILT_WORK by lazy { "androidx.hilt:hilt-work:${Version.hiltCompileVersion}" }
-    val HILT_LIFECYCLE by lazy {"androidx.hilt:hilt-lifecycle-viewmodel:${Version.hiltAndroidxVersion}"}
+    val HILT_LIFECYCLE by lazy { "androidx.hilt:hilt-lifecycle-viewmodel:${Version.hiltAndroidxVersion}" }
 
     // Retrofit
     val RETROFIT by lazy { "com.squareup.retrofit2:retrofit:${Version.retrofitVersion}" }
@@ -45,7 +45,7 @@ object Dependency {
     val RETROFIT_LOGGING by lazy { "com.squareup.okhttp3:logging-interceptor:${Version.loggingInterceptorVersion}" }
 
     // Coil
-    val Coil by lazy {"io.coil-kt:coil-compose:${Version.coilVersion}"}
+    val Coil by lazy { "io.coil-kt:coil-compose:${Version.coilVersion}" }
 
     // Ktx
     val KTS_CORE by lazy { "androidx.core:core-ktx:${Version.ktxCoreVersion}" }
