@@ -16,3 +16,4 @@ rootProject.name = "ComposeMvi"
 include ':app'
 include ':common'
 include ':core'
+include ':repo'

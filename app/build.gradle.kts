@@ -55,6 +55,7 @@ dependencies {
     // Module
     project(Module.CORE)
     project(Module.COMMON)
+    project(Module.REPO)
 
     // Compose
     implementation(Dependency.COMPOSE_UI)
@@ -96,11 +97,6 @@ dependencies {
     kapt(Dependency.HILT_COMPILER_ANDROIDX)
     implementation(Dependency.HILT_WORK)
     implementation(Dependency.HILT_LIFECYCLE)
-
-    // Retrofit
-    implementation(Dependency.RETROFIT)
-    implementation(Dependency.RETROFIT_GSON)
-    implementation(Dependency.RETROFIT_LOGGING)
 
     // Coil
     implementation(Dependency.Coil)
