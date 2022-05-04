@@ -52,6 +52,9 @@ android {
 }
 
 dependencies {
+    // Module
+    project(Module.CORE)
+    project(Module.COMMON)
 
     // Compose
     implementation(Dependency.COMPOSE_UI)
@@ -59,10 +62,24 @@ dependencies {
     implementation(Dependency.COMPOSE_UI_TOOLING_PREVIEW)
     implementation(Dependency.COMPOSE_LIFECYCLE)
     implementation(Dependency.COMPOSE_ACTIVITY)
+    implementation(Dependency.COMPOSE_RUNTIME)
+    implementation(Dependency.COMPOSE_RUNTIME_LIVEDATA)
+    implementation(Dependency.COMPOSE_RUNTIME_RXJAVA3)
+    implementation(Dependency.COMPOSE_COMPILER)
+    implementation(Dependency.COMPOSE_FONDATION)
+
+    implementation(Dependency.COMPOSE_FONDATION_LAYOUT)
+
+    implementation(Dependency.COMPOSE_CONSTRAINTLAYOUT)
 
     debugImplementation(Dependency.COMPOSE_UI_TOOLING)
 
     androidTestImplementation(Dependency.TEST_COMPOSE)
+
+    // AppCompat
+    implementation(Dependency.APP_COMPAT)
+
+    implementation(Dependency.LIFECYCLE_REACTIVE)
 
     // Test
     testImplementation(Dependency.JUNIT)
@@ -75,13 +92,18 @@ dependencies {
 
     // Hilt
     implementation(Dependency.HILT_ANDROID)
-    kapt(Dependency.HILT_COMPILER)
+    kapt(Dependency.HILT_COMPILER_DAGGER)
+    kapt(Dependency.HILT_COMPILER_ANDROIDX)
     implementation(Dependency.HILT_WORK)
+    implementation(Dependency.HILT_LIFECYCLE)
 
     // Retrofit
     implementation(Dependency.RETROFIT)
     implementation(Dependency.RETROFIT_GSON)
     implementation(Dependency.RETROFIT_LOGGING)
+
+    // Coil
+    implementation(Dependency.Coil)
 
     // Ktx
     implementation(Dependency.KTS_CORE)
